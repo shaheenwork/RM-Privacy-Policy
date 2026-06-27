@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – Random Malayali</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --ink: #1a1a1a;
+      --ink-mid: #444;
+      --ink-muted: #666;
+      --ink-faint: #999;
+      --line: #e4e1db;
+      --bg: #f9f8f6;
+      --surface: #ffffff;
+      --accent: #1a56a0;
+      --accent-bg: #eef4fd;
+      --accent-border: #b8d0f0;
+      --serif: 'Lora', Georgia, serif;
+      --sans: 'DM Sans', system-ui, sans-serif;
+    }
+    body {
+      font-family: var(--sans);
+      background: var(--bg);
+      color: var(--ink);
+      font-size: 16px;
+      line-height: 1.8;
+      padding: 0 1.25rem;
+    }
+    .wrapper {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 4.5rem 0 7rem;
+    }
+
+    /* Header */
+    .app-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: var(--accent-bg);
+      border: 1px solid var(--accent-border);
+      padding: 4px 12px;
+      border-radius: 100px;
+      margin-bottom: 1.5rem;
+    }
+    h1 {
+      font-family: var(--serif);
+      font-size: clamp(2rem, 5vw, 2.75rem);
+      font-weight: 600;
+      line-height: 1.15;
+      color: var(--ink);
+      margin-bottom: 1rem;
+    }
+    .meta-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 2rem;
+      font-size: 13.5px;
+      color: var(--ink-faint);
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 2.5rem;
+    }
+    .meta-grid span strong {
+      color: var(--ink-mid);
+      font-weight: 500;
+    }
+
+    /* Summary box */
+    .summary-box {
+      background: var(--accent-bg);
+      border: 1px solid var(--accent-border);
+      border-radius: 10px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 3rem;
+      font-size: 14.5px;
+      color: #1a3a6b;
+      line-height: 1.7;
+    }
+    .summary-box strong {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.5rem;
+      color: var(--accent);
+    }
+    .summary-box ul {
+      padding-left: 1.1rem;
+      margin: 0;
+    }
+    .summary-box ul li {
+      margin-bottom: 0.25rem;
+    }
+
+    /* Sections */
+    section {
+      margin-bottom: 2.75rem;
+    }
+    h2 {
+      font-family: var(--serif);
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 0.85rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    h2 .num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: var(--accent-bg);
+      border: 1px solid var(--accent-border);
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--accent);
+      flex-shrink: 0;
+      font-family: var(--sans);
+    }
+    p {
+      font-size: 15px;
+      color: var(--ink-muted);
+      margin-bottom: 0.85rem;
+    }
+    ul {
+      font-size: 15px;
+      color: var(--ink-muted);
+      padding-left: 1.2rem;
+      margin-bottom: 0.85rem;
+    }
+    ul li { margin-bottom: 0.35rem; }
+    a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+
+    /* Data table */
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      margin: 0.5rem 0 1rem;
+    }
+    .data-table th {
+      background: var(--accent-bg);
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      padding: 8px 12px;
+      text-align: left;
+      border-bottom: 1px solid var(--accent-border);
+    }
+    .data-table td {
+      padding: 9px 12px;
+      border-bottom: 1px solid var(--line);
+      color: var(--ink-muted);
+      vertical-align: top;
+    }
+    .data-table tr:last-child td { border-bottom: none; }
+    .data-table td:first-child { color: var(--ink-mid); font-weight: 500; }
+
+    /* Pill badge */
+    .no-badge {
+      display: inline-block;
+      background: #edfaf3;
+      color: #1a6640;
+      border: 1px solid #b0e4c8;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 100px;
+      margin-left: 6px;
+      vertical-align: middle;
+    }
+
+    /* Contact card */
+    .contact-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 1.25rem 1.5rem;
+      font-size: 15px;
+      color: var(--ink-muted);
+    }
+    .contact-card a { font-weight: 500; }
+
+    /* Footer */
+    footer {
+      margin-top: 4.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--line);
+      text-align: center;
+      font-size: 13px;
+      color: var(--ink-faint);
+    }
+
+    @media (max-width: 500px) {
+      .wrapper { padding: 2.5rem 0 5rem; }
+      h1 { font-size: 1.75rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+
+  <div class="app-label">Privacy Policy</div>
+  <h1>Random Malayali</h1>
+  <div class="meta-grid">
+    <span><strong>Effective Date:</strong> June 27, 2026</span>
+    <span><strong>Developer:</strong> Random Malayali</span>
+    <span><strong>Contact:</strong> <a href="mailto:apps.shn@gmail.com">apps.shn@gmail.com</a></span>
+    <span><strong>Platform:</strong> Android</span>
+  </div>
+
+  <div class="summary-box">
+    <strong>At a glance</strong>
+    <ul>
+      <li>No account or sign-up required to use the App.</li>
+      <li>We do not collect your name, email, phone number, or any personally identifiable information.</li>
+      <li>IP addresses are only recorded when a user is reported for abuse, solely for moderation.</li>
+      <li>We never sell, rent, or trade your data.</li>
+      <li>Third-party services (Firebase, AdMob) operate under their own privacy policies.</li>
+    </ul>
+  </div>
+
+  <section>
+    <h2><span class="num">1</span> Introduction</h2>
+    <p>
+      Random Malayali ("the App," "we," "our," or "us") is an anonymous chat application available on Android. We are committed to protecting your privacy. This Privacy Policy describes what information is collected, how it is used, and the choices available to you when you use the App.
+    </p>
+    <p>
+      By using the App, you agree to the terms described in this Privacy Policy. If you do not agree, please discontinue use of the App.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">2</span> No Account Required</h2>
+    <p>
+      Random Malayali does not require you to create an account, register, or log in. You can use the App anonymously without providing any personal credentials.
+    </p>
+  </section>
+
+  <section>
+    <h2>
+      <span class="num">3</span>
+      Information We Do Not Collect
+      <span class="no-badge">✓ None</span>
+    </h2>
+    <p>We do not collect, store, or process any of the following personally identifiable information:</p>
+    <ul>
+      <li>Name, email address, or phone number</li>
+      <li>Home, mailing, or billing address</li>
+      <li>Date of birth or age</li>
+      <li>Government-issued identification</li>
+      <li>Contacts, social media accounts, or linked profiles</li>
+      <li>Payment or financial information</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">4</span> Information We Do Collect</h2>
+    <p>The following information may be collected or processed during your use of the App:</p>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Data Type</th>
+          <th>Purpose</th>
+          <th>Collected By</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>IP Address (reported users only)</td>
+          <td>Abuse prevention and content moderation</td>
+          <td>Random Malayali</td>
+        </tr>
+        <tr>
+          <td>Device model &amp; OS version</td>
+          <td>Analytics and performance</td>
+          <td>Firebase Analytics</td>
+        </tr>
+        <tr>
+          <td>App version, language, region</td>
+          <td>Analytics and performance</td>
+          <td>Firebase Analytics</td>
+        </tr>
+        <tr>
+          <td>Usage statistics &amp; diagnostics</td>
+          <td>Bug detection and improvement</td>
+          <td>Firebase Analytics</td>
+        </tr>
+        <tr>
+          <td>Device token</td>
+          <td>Delivering push notifications</td>
+          <td>Firebase Cloud Messaging</td>
+        </tr>
+        <tr>
+          <td>Advertising identifier, device info</td>
+          <td>Displaying relevant advertisements</td>
+          <td>Google AdMob</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2><span class="num">5</span> IP Address and Abuse Reports</h2>
+    <p>
+      To maintain a safe community, the App may record the public IP address of a user <strong>only when another user submits an abuse report</strong> — for spam, harassment, inappropriate content, or violations of our community guidelines.
+    </p>
+    <p>The IP address collected in this context is used exclusively for:</p>
+    <ul>
+      <li>Investigating reported violations</li>
+      <li>Preventing spam, fraud, and misuse</li>
+      <li>Enforcing our community guidelines and terms of service</li>
+    </ul>
+    <p>IP addresses are <strong>not</strong> used for advertising, user profiling, or any purpose other than moderation.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">6</span> Anonymous Chat</h2>
+    <p>
+      Conversations within Random Malayali are anonymous. Chats are not linked to personal identities, user accounts, or any identifying information. We do not store the content of your conversations on our servers beyond what is required for real-time message delivery.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">7</span> Third-Party Services</h2>
+    <p>The App integrates the following third-party services. Each operates under its own privacy policy:</p>
+    <ul>
+      <li>
+        <strong>Google Firebase Analytics</strong> — collects anonymised usage data to improve App performance.<br />
+        <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a>
+      </li>
+      <li style="margin-top:0.6rem">
+        <strong>Firebase Cloud Messaging (FCM)</strong> — delivers push notifications to your device.<br />
+        <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a>
+      </li>
+      <li style="margin-top:0.6rem">
+        <strong>Google AdMob</strong> — displays advertisements within the App. AdMob may collect device identifiers, advertising IDs, and approximate location to serve and measure ads.<br />
+        <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">AdMob Privacy Policy</a>
+      </li>
+      <li style="margin-top:0.6rem">
+        <strong>Google Play Services</strong> — provides core platform services for Android.<br />
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>
+      </li>
+    </ul>
+    <p>We recommend reviewing the privacy policies of these services for a full understanding of the data they may collect.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">8</span> How We Use Information</h2>
+    <p>Information processed in connection with the App is used solely to:</p>
+    <ul>
+      <li>Provide and operate the anonymous chat service</li>
+      <li>Monitor and improve App performance and reliability</li>
+      <li>Understand aggregate usage patterns through analytics</li>
+      <li>Deliver push notifications</li>
+      <li>Display advertisements through Google AdMob</li>
+      <li>Investigate and act on user abuse reports</li>
+      <li>Prevent spam, fraud, and violations of our community guidelines</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">9</span> Data Sharing and Disclosure</h2>
+    <p>We do not sell, rent, or trade your information to any third parties.</p>
+    <p>Information may be disclosed only in the following limited circumstances:</p>
+    <ul>
+      <li>To comply with applicable laws, regulations, or valid legal processes (such as a court order or subpoena)</li>
+      <li>To protect the rights, safety, or property of our users or the public</li>
+      <li>To investigate abuse, fraud, or violations of our terms of service</li>
+      <li>As required for the technical operation of the third-party services described above</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">10</span> Data Retention</h2>
+    <p>
+      We retain information only for as long as necessary to fulfill the purposes described in this Privacy Policy or as required by applicable law. IP addresses collected for abuse moderation are retained for a limited period and deleted when no longer needed for the relevant investigation.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">11</span> Data Security</h2>
+    <p>
+      We implement reasonable and appropriate technical and organisational measures to safeguard the information processed in connection with the App. However, no method of electronic transmission or storage is completely secure, and we cannot guarantee absolute security.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">12</span> Children's Privacy</h2>
+    <p>
+      Random Malayali is intended for users who are <strong>18 years of age or older</strong>. The App is not directed at, and we do not knowingly collect personal information from, individuals under the age of 13. If we become aware that personal information has been inadvertently collected from a child under 13, we will take prompt steps to delete such information. If you believe this has occurred, please contact us at <a href="mailto:apps.shn@gmail.com">apps.shn@gmail.com</a>.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">13</span> Your Privacy Rights</h2>
+    <p>
+      Depending on your jurisdiction, you may have rights with respect to information processed about you. These may include the right to:
+    </p>
+    <ul>
+      <li>Request access to information held about you</li>
+      <li>Request correction of inaccurate information</li>
+      <li>Request deletion of your information where applicable</li>
+      <li>Object to or restrict certain processing activities</li>
+    </ul>
+    <p>
+      To exercise any of these rights, please contact us at <a href="mailto:apps.shn@gmail.com">apps.shn@gmail.com</a>. We will respond to all requests in accordance with applicable law.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">14</span> Changes to This Privacy Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time to reflect changes in the App or applicable law. When we do, we will revise the Effective Date at the top of this page. We encourage you to review this page periodically. Continued use of the App following any changes constitutes your acceptance of the revised Privacy Policy.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">15</span> Contact Us</h2>
+    <div class="contact-card">
+      <p style="margin-bottom:0.5rem">If you have any questions, concerns, or requests regarding this Privacy Policy or the handling of your information, please contact us:</p>
+      <p style="margin:0"><strong>Email:</strong> <a href="mailto:apps.shn@gmail.com">apps.shn@gmail.com</a></p>
+      <p style="margin:0"><strong>App:</strong> Random Malayali (Android)</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Random Malayali · All rights reserved<br />
+    <span style="font-size:12px">This policy is available at its permanent URL for Google Play Store compliance.</span>
+  </footer>
+
+</div>
+</body>
+</html>
