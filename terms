@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Service – Random Malayali</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --ink: #1a1a1a;
+      --ink-mid: #444;
+      --ink-muted: #666;
+      --ink-faint: #999;
+      --line: #e4e1db;
+      --bg: #f9f8f6;
+      --surface: #ffffff;
+      --accent: #1a56a0;
+      --accent-bg: #eef4fd;
+      --accent-border: #b8d0f0;
+      --warn-bg: #fff8ec;
+      --warn-border: #f5d98b;
+      --warn-text: #7a4f00;
+      --serif: 'Lora', Georgia, serif;
+      --sans: 'DM Sans', system-ui, sans-serif;
+    }
+    body {
+      font-family: var(--sans);
+      background: var(--bg);
+      color: var(--ink);
+      font-size: 16px;
+      line-height: 1.8;
+      padding: 0 1.25rem;
+    }
+    .wrapper {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 4.5rem 0 7rem;
+    }
+
+    .app-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: var(--accent-bg);
+      border: 1px solid var(--accent-border);
+      padding: 4px 12px;
+      border-radius: 100px;
+      margin-bottom: 1.5rem;
+    }
+    h1 {
+      font-family: var(--serif);
+      font-size: clamp(2rem, 5vw, 2.75rem);
+      font-weight: 600;
+      line-height: 1.15;
+      color: var(--ink);
+      margin-bottom: 1rem;
+    }
+    .meta-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 2rem;
+      font-size: 13.5px;
+      color: var(--ink-faint);
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 2.5rem;
+    }
+    .meta-grid span strong { color: var(--ink-mid); font-weight: 500; }
+
+    .summary-box {
+      background: var(--accent-bg);
+      border: 1px solid var(--accent-border);
+      border-radius: 10px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 3rem;
+      font-size: 14.5px;
+      color: #1a3a6b;
+      line-height: 1.7;
+    }
+    .summary-box strong {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.5rem;
+      color: var(--accent);
+    }
+    .summary-box ul { padding-left: 1.1rem; margin: 0; }
+    .summary-box ul li { margin-bottom: 0.25rem; }
+
+    .warn-box {
+      background: var(--warn-bg);
+      border: 1px solid var(--warn-border);
+      border-radius: 10px;
+      padding: 1rem 1.25rem;
+      margin: 1.25rem 0;
+      font-size: 14px;
+      color: var(--warn-text);
+      line-height: 1.65;
+    }
+    .warn-box strong {
+      display: block;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.4rem;
+    }
+
+    section { margin-bottom: 2.75rem; }
+    h2 {
+      font-family: var(--serif);
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 0.85rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    h2 .num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: var(--accent-bg);
+      border: 1px solid var(--accent-border);
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--accent);
+      flex-shrink: 0;
+      font-family: var(--sans);
+    }
+    p { font-size: 15px; color: var(--ink-muted); margin-bottom: 0.85rem; }
+    ul { font-size: 15px; color: var(--ink-muted); padding-left: 1.2rem; margin-bottom: 0.85rem; }
+    ul li { margin-bottom: 0.35rem; }
+    a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+
+    .prohibited-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 10px;
+      margin: 0.75rem 0 1rem;
+    }
+    .prohibited-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      background: #fff5f5;
+      border: 1px solid #fdd;
+      border-radius: 8px;
+      padding: 10px 12px;
+      font-size: 14px;
+      color: #7a2020;
+    }
+    .prohibited-item::before {
+      content: "✕";
+      font-size: 11px;
+      font-weight: 700;
+      color: #c0392b;
+      background: #fdd;
+      border-radius: 50%;
+      width: 18px;
+      height: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .contact-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 1.25rem 1.5rem;
+      font-size: 15px;
+      color: var(--ink-muted);
+    }
+    .contact-card a { font-weight: 500; }
+
+    .policy-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 14px;
+      color: var(--accent);
+      background: var(--accent-bg);
+      border: 1px solid var(--accent-border);
+      padding: 6px 14px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 0.5rem;
+      font-weight: 500;
+    }
+
+    footer {
+      margin-top: 4.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--line);
+      text-align: center;
+      font-size: 13px;
+      color: var(--ink-faint);
+    }
+
+    @media (max-width: 500px) {
+      .wrapper { padding: 2.5rem 0 5rem; }
+      h1 { font-size: 1.75rem; }
+      .prohibited-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+
+  <div class="app-label">Terms of Service</div>
+  <h1>Random Malayali</h1>
+  <div class="meta-grid">
+    <span><strong>Effective Date:</strong> June 27, 2026</span>
+    <span><strong>Developer:</strong> Random Malayali</span>
+    <span><strong>Contact:</strong> <a href="mailto:apps.shn@gmail.com">apps.shn@gmail.com</a></span>
+    <span><strong>Platform:</strong> Android</span>
+  </div>
+
+  <div class="summary-box">
+    <strong>Key points</strong>
+    <ul>
+      <li>You must be 18 or older to use this App.</li>
+      <li>This is an anonymous chat platform — use it responsibly.</li>
+      <li>Harassment, hate speech, illegal content, and spam are strictly prohibited.</li>
+      <li>We may suspend or ban accounts that violate these Terms.</li>
+      <li>The App is provided "as is" — we do not guarantee uninterrupted service.</li>
+    </ul>
+  </div>
+
+  <section>
+    <h2><span class="num">1</span> Acceptance of Terms</h2>
+    <p>
+      By downloading, installing, or using Random Malayali ("the App"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, you must not use the App.
+    </p>
+    <p>
+      We reserve the right to update these Terms at any time. Continued use of the App after changes are posted constitutes your acceptance of the revised Terms. The Effective Date at the top of this page reflects the most recent version.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">2</span> Eligibility</h2>
+    <p>
+      You must be at least <strong>18 years of age</strong> to use Random Malayali. By using the App, you represent and warrant that you meet this age requirement. If we discover that a user is under 18, we will terminate their access immediately.
+    </p>
+    <p>
+      You also represent that you are not prohibited from using the App under the laws of your jurisdiction.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">3</span> Description of Service</h2>
+    <p>
+      Random Malayali is an anonymous, real-time chat application that connects users randomly. The App does not require account registration. Conversations are not linked to personal identities.
+    </p>
+    <p>
+      We reserve the right to modify, suspend, or discontinue any aspect of the service at any time without prior notice.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">4</span> Prohibited Conduct</h2>
+    <p>
+      You agree to use the App only for lawful purposes and in a manner that does not infringe the rights of others. The following conduct is strictly prohibited:
+    </p>
+    <div class="prohibited-grid">
+      <div class="prohibited-item">Posting or sharing sexual, obscene, or pornographic content</div>
+      <div class="prohibited-item">Harassment, bullying, threats, or intimidation of any kind</div>
+      <div class="prohibited-item">Hate speech based on race, religion, gender, ethnicity, or sexual orientation</div>
+      <div class="prohibited-item">Sharing content that exploits or harms minors in any way</div>
+      <div class="prohibited-item">Impersonating any person, entity, or organisation</div>
+      <div class="prohibited-item">Spamming, flooding, or sending unsolicited messages</div>
+      <div class="prohibited-item">Sharing malware, phishing links, or malicious code</div>
+      <div class="prohibited-item">Soliciting personal information from other users</div>
+      <div class="prohibited-item">Promoting or facilitating illegal activities</div>
+      <div class="prohibited-item">Attempting to reverse-engineer or exploit the App</div>
+      <div class="prohibited-item">Using bots, scripts, or automated tools to interact with the App</div>
+      <div class="prohibited-item">Violating any applicable local, national, or international law</div>
+    </div>
+    <div class="warn-box">
+      <strong>Enforcement</strong>
+      Violations of these rules may result in immediate suspension or permanent ban from the App, and may be reported to relevant authorities where required by law.
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">5</span> User-Generated Content</h2>
+    <p>
+      You are solely responsible for all content you send, share, or transmit through the App ("User Content"). By using the App, you represent that your User Content does not violate any applicable law or these Terms.
+    </p>
+    <p>
+      We do not claim ownership of your User Content. However, you grant us a limited, non-exclusive licence to process and transmit your User Content solely for the purpose of operating the service.
+    </p>
+    <p>
+      We do not monitor conversations in real time, but we reserve the right to review and act on reported content, including removing content and banning users.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">6</span> Reporting and Moderation</h2>
+    <p>
+      The App provides a reporting feature that allows users to flag content or behaviour that violates these Terms. When a report is submitted, we may record the reported user's public IP address solely for the purposes of investigation and enforcement.
+    </p>
+    <p>
+      We will review reports in good faith and take action where appropriate, including warnings, temporary suspension, or permanent removal from the App.
+    </p>
+    <p>
+      We are not obligated to take action on every report, and our moderation decisions are final.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">7</span> Intellectual Property</h2>
+    <p>
+      All rights, title, and interest in and to the App — including its design, code, graphics, and branding — are owned by Random Malayali and are protected by applicable intellectual property laws.
+    </p>
+    <p>
+      You may not copy, modify, distribute, sell, reverse-engineer, or create derivative works based on any part of the App without our express written permission.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">8</span> Advertisements</h2>
+    <p>
+      The App displays advertisements served by Google AdMob. These ads are provided by a third party and are subject to Google's own terms and policies. We are not responsible for the content of third-party advertisements.
+    </p>
+    <p>
+      By using the App, you acknowledge and agree that advertisements may be displayed during your use of the service.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">9</span> Disclaimers and Limitation of Liability</h2>
+    <p>
+      The App is provided on an <strong>"as is"</strong> and <strong>"as available"</strong> basis, without warranties of any kind, either express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement.
+    </p>
+    <p>We do not warrant that:</p>
+    <ul>
+      <li>The App will be available at all times or free from errors or interruptions</li>
+      <li>The App will be free from viruses or other harmful components</li>
+      <li>The content or conduct of other users will meet your expectations</li>
+    </ul>
+    <p>
+      To the fullest extent permitted by applicable law, Random Malayali shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or in connection with your use of the App, even if we have been advised of the possibility of such damages.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">10</span> Indemnification</h2>
+    <p>
+      You agree to indemnify, defend, and hold harmless Random Malayali and its affiliates from and against any claims, liabilities, damages, losses, and expenses (including legal fees) arising out of or in connection with:
+    </p>
+    <ul>
+      <li>Your use of the App</li>
+      <li>Your User Content</li>
+      <li>Your violation of these Terms</li>
+      <li>Your violation of any rights of another user or third party</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">11</span> Termination</h2>
+    <p>
+      We reserve the right to suspend or terminate your access to the App at any time, with or without notice, for conduct that we determine violates these Terms or is otherwise harmful to other users, us, or third parties.
+    </p>
+    <p>
+      Upon termination, your right to use the App ceases immediately. Sections relating to intellectual property, disclaimers, limitation of liability, and indemnification shall survive termination.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">12</span> Governing Law</h2>
+    <p>
+      These Terms shall be governed by and construed in accordance with the laws of India, without regard to its conflict of law provisions. Any disputes arising under these Terms shall be subject to the exclusive jurisdiction of the courts located in India.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">13</span> Privacy Policy</h2>
+    <p>
+      Your use of the App is also governed by our Privacy Policy, which is incorporated into these Terms by reference. Please review our Privacy Policy to understand our data practices.
+    </p>
+    <a class="policy-link" href="./index.html">View Privacy Policy →</a>
+  </section>
+
+  <section>
+    <h2><span class="num">14</span> Changes to These Terms</h2>
+    <p>
+      We may revise these Terms from time to time. When we do, we will update the Effective Date at the top of this page. We encourage you to review these Terms periodically. Your continued use of the App after any changes constitutes your acceptance of the new Terms.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">15</span> Contact Us</h2>
+    <div class="contact-card">
+      <p style="margin-bottom:0.5rem">If you have any questions, concerns, or feedback regarding these Terms of Service, please reach out to us:</p>
+      <p style="margin:0"><strong>Email:</strong> <a href="mailto:apps.shn@gmail.com">apps.shn@gmail.com</a></p>
+      <p style="margin:0"><strong>App:</strong> Random Malayali (Android)</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Random Malayali · All rights reserved<br />
+    <span style="font-size:12px">This page is available at its permanent URL for Google Play Store compliance.</span>
+  </footer>
+
+</div>
+</body>
+</html>
